@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Srikanth | Java Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+            background:#111827;
+        }
+
+        nav h2{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        header{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            padding:80px 20px;
+            background:linear-gradient(135deg,#3b82f6,#9333ea);
+        }
+
+        .profile-img{
+            width:250px;
+            height:320px;
+            object-fit:cover;
+            border-radius:50%;
+            margin:20px;
+            border:4px solid white;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .intro{
+            max-width:500px;
+            margin:20px;
+        }
+
+        .intro h1{
+            font-size:40px;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:10px 25px;
+            border:none;
+            border-radius:25px;
+            background:white;
+            color:#3b82f6;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.1);
+        }
+
+        section{
+            padding:60px 50px;
+            text-align:center;
+        }
+
+        h2{
+            margin-bottom:30px;
+            font-size:32px;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:25px;
+            width:250px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            background:#334155;
+        }
+
+        footer{
+            background:#111827;
+            padding:20px;
+            text-align:center;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+            nav{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            header{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Srikanth</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img src="sriphoto/sriphoto.png" alt="Srikanth Photo" class="profile-img">
+
+    <div class="intro">
+        <h1>Hi, I'm Srikanth 👨‍💻</h1>
+        <p>Aspiring Java Developer | SQL | JavaScript</p>
+        <button class="btn" onclick="hire()">Hire Me</button>
+        <p id="msg"></p>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate 2024 graduate focused on building efficient and scalable applications.
+        I have strong fundamentals in Java, SQL, and JavaScript.
+        I enjoy problem-solving and continuous learning.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Java</h3>
+            <p>Core Java & OOPS</p>
+        </div>
+        <div class="card">
+            <h3>SQL</h3>
+            <p>Database Queries & Joins</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Frontend Interactivity</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: dsrikanth979@gmail.com</p>
+    <p>Phone: +91-6374960059</p>
+</section>
+
+<footer>
+    <p>© 2026 Srikanth | Java Developer Portfolio</p>
+</footer>
+
+<script>
+    function hire(){
+        document.getElementById("msg").innerHTML =
+        "🚀 Thank you! I'm ready to contribute and grow with your company.";
+    }
+</script>
+
+</body>
+</html>
